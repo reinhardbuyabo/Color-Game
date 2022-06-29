@@ -70,3 +70,19 @@ main {
   color: white;
   border-color: black;
 }
+
+.won {
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+}
+
+.reset {
+  border: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 75px;
+  height: 25px;
+  font-family: monospace;
+}
