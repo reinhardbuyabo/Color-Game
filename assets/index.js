@@ -17,6 +17,10 @@ function checkColors(e) {
     //console.log(colors[pickedColor]); // debug line
     if (e.target.style.backgroundColor == colors[pickedColor]) {
       statusEl.innerHTML = "<h2>YOU WON</h2>";
+      let corrects = document.querySelectorAll(".colors__block");
+      for (let i = 0; i < corrects.length; i++) {
+        corrects[i].style.backgroundColor = colors[pickedColor];
+      }
       document.getElementsByTagName("h1")[0].classList.add("won");
     } else {
       statusEl.innerHTML = "<h2>TRY AGAIN</h2>";
